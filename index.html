@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional platform dedicated to raising mental health awareness and providing trusted resources.">
+    <meta name="keywords" content="mental health, awareness, support, resources, mental wellness">
+    <meta name="author" content="Your Name">
+    <title>Mental Health Awareness</title>
+    <link rel="stylesheet" href="medico.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" aria-label="Mental Health Awareness Logo">
+                <span>Mental Health Awareness</span>
+            </div>
+            <ul class="nav-links" role="navigation">
+                <li><a href="#about" aria-label="About Mental Health">About</a></li>
+                <li><a href="#resources" aria-label="Mental Health Resources">Resources</a></li>
+                <li><a href="#contact" aria-label="Contact Us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" role="banner">
+        <h1>Empowering Mental Wellness</h1>
+        <p>Join us in breaking the stigma and supporting mental health for all.</p>
+        <button class="cta-button" onclick="window.location.href='#about'" aria-label="Learn more about mental health">Learn More</button>
+    </section>
+
+    <section id="about" role="region" aria-labelledby="about-heading">
+        <h2 id="about-heading">Why Mental Health Matters</h2>
+        <p>Mental health is integral to our well-being, influencing how we think, feel, and connect with others. Raising awareness fosters understanding and support.</p>
+        <img src="D:\web\exercise 5\Mental-Health_1024px.jpg" alt="Illustration of diverse individuals supporting mental health awareness" class="about-image" >
+    </section>
+
+   <section id="resources" role="region" aria-labelledby="resources-heading">
+    <h2 id="resources-heading">Trusted Resources</h2>
+    <p>Explore our curated resources to support your mental wellness journey.</p>
+    <div class="resources-grid">
+        <!-- Resource 1: National Helpline -->
+        <div class="resource-card">
+            <div class="resource-icon">📞</div>
+            <h3>National Helpline</h3>
+            <button class="resource-toggle" aria-expanded="false" aria-controls="helpline-details" onclick="toggleDetails('helpline-details')">Learn More</button>
+            <div id="helpline-details" class="resource-details" style="display: none;">
+                <p>Immediate support services available 24/7. Call for confidential help.</p>
+                <a href="https://www.example.com/helpline" target="_blank" rel="noopener noreferrer" aria-label="Visit National Mental Health Helpline">Visit Helpline</a>
+            </div>
+        </div>
+        <!-- Resource 2: Coping Strategies -->
+        <div class="resource-card">
+            <div class="resource-icon">🧠</div>
+            <h3>Coping Strategies</h3>
+            <button class="resource-toggle" aria-expanded="false" aria-controls="coping-details" onclick="toggleDetails('coping-details')">Learn More</button>
+            <div id="coping-details" class="resource-details" style="display: none;">
+                <p>Practical tools and articles to manage stress and improve mental wellness.</p>
+                <a href="https://www.example.com/articles" target="_blank" rel="noopener noreferrer" aria-label="Explore Mental Health Coping Articles">Explore Articles</a>
+            </div>
+        </div>
+        <!-- Resource 3: Wellness Apps -->
+        <div class="resource-card">
+            <div class="resource-icon">📱</div>
+            <h3>Wellness Apps</h3>
+            <button class="resource-toggle" aria-expanded="false" aria-controls="apps-details" onclick="toggleDetails('apps-details')">Learn More</button>
+            <div id="apps-details" class="resource-details" style="display: none;">
+                <p>Track your mood and access guided exercises with top mental health apps.</p>
+                <a href="https://www.example.com/apps" target="_blank" rel="noopener noreferrer" aria-label="Discover Mental Health Apps">Discover Apps</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="awareness" role="region" aria-labelledby="awareness-heading">
+    <h2 id="awareness-heading">Community Health Programs</h2>
+    <p>Join us in promoting societal well-being through awareness and action.</p>
+    <div class="programs-grid">
+        <!-- Blood Donation Card -->
+        <div class="program-card">
+            <div class="program-icon">🩸</div>
+            <h3>Blood Donation Camps</h3>
+            <p>Donate blood and save lives. Our camps are organized regularly to encourage community participation.</p>
+            <ul>
+                <li>Next Camp: October 15, 2025, at Community Center</li>
+                <li>Eligibility: Ages 18-65, healthy individuals</li>
+                <li>Benefits: Free health screening and refreshments</li>
+            </ul>
+            <a href="https://www.example.com/blood-donation" target="_blank" rel="noopener noreferrer" aria-label="Learn more about blood donation">Learn More & Register</a>
+        </div>
+        <!-- Health Checkups Card -->
+        <div class="program-card">
+            <div class="program-icon">🩺</div>
+            <h3>Regular Health Checkups</h3>
+            <p>Preventive care is key. Attend our free checkups to monitor your health and catch issues early.</p>
+            <ul>
+                <li>Schedule: Every Saturday, 9 AM - 2 PM</li>
+                <li>Services: Blood pressure, BMI, basic screenings</li>
+                <li>Target: All ages, focus on seniors</li>
+            </ul>
+            <a href="https://www.example.com/health-checkups" target="_blank" rel="noopener noreferrer" aria-label="Learn more about health checkups">Learn More & Book</a>
+        </div>
+        <!-- Vaccination Card -->
+        <div class="program-card">
+            <div class="program-icon">💉</div>
+            <h3>Vaccination Information</h3>
+            <p>Stay protected. Get updated on vaccines for flu, COVID-19, and more to safeguard your community.</p>
+            <ul>
+                <li>Upcoming Drives: November 1, 2025</li>
+                <li>Types: Seasonal vaccines, boosters</li>
+                <li>Importance: Prevents outbreaks and promotes herd immunity</li>
+            </ul>
+            <a href="https://www.example.com/vaccinations" target="_blank" rel="noopener noreferrer" aria-label="Learn more about vaccinations">Learn More & Schedule</a>
+        </div>
+    </div>
+</section>
+
+  </div>
+</section>
+
+    <section id="contact" role="region" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in Touch</h2>
+        <form id="contact-form" action="#" method="post" aria-label="Contact form for mental health inquiries">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name" aria-required="true">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email" aria-required="true">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your Message" aria-required="true"></textarea>
+
+            <button type="submit" class="cta-button" aria-label="Submit contact form">Send Message</button>
+            <p id="form-feedback" role="alert" aria-live="assertive"></p>
+        </form>
+    </section>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Mental Health Awareness. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><img src="https://via.placeholder.com/24?text=T" alt="Twitter Icon"></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><img src="https://via.placeholder.com/24?text=F" alt="Facebook Icon"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
